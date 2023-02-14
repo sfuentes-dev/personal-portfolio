@@ -2,7 +2,15 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 import { Drawer, Navbar } from '@/components/ui';
-import { About, Hero, Skills } from '@/components/sections';
+import {
+  About,
+  Contact,
+  Hero,
+  OtherProjects,
+  Projects,
+  Skills,
+  Footer,
+} from '@/components/sections';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +24,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className='sticky top-0 bg-white'>
+      <header className='sticky top-0 bg-white z-50'>
         <Navbar setIsOpen={setIsOpen} />
       </header>
 
-      <main>
+      <main className='scroll scroll-smooth'>
         {/* // TODO: Improve and fix  Drawer code */}
         {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen} /> */}
 
@@ -29,6 +37,14 @@ export default function Home() {
         <About />
 
         <Skills />
+
+        <Projects />
+
+        <OtherProjects />
+
+        <Contact />
+
+        <Footer />
       </main>
     </>
   );
