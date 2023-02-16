@@ -5,13 +5,17 @@ import { Map } from '../ui/Map';
 export const Contact = () => {
   return (
     <>
-      <section className='container mx-auto h-screen flex flex-col justify-center'>
-        <div className='mx-48'>
-          <h2 className='text-4xl font-bold'>Get in Touch.</h2>
-          <p className='text-lg'>Lets take a coffee and talk for our next project</p>
+      <section className='container mx-auto flex flex-col justify-center mb-16'>
+        <div className=''>
+          <h2 className='text-center xl:text-left text-3xl md:text-4xl font-bold xl:mx-14'>
+            Get in Touch.
+          </h2>
+          <p className='text-base text-center xl:text-left  xl:mx-14'>
+            Lets take a coffee and talk for our next project
+          </p>
 
-          <div className='flex items-center justify-between mt-12 gap-32'>
-            <form className='flex flex-col gap-6  w-1/2'>
+          <div className='flex flex-col lg:flex-row items-center justify-between lg:justify-center mt-12 gap-24 lg:gap-8'>
+            <form className='flex flex-col gap-6 w-96 lg:w-[420px]'>
               <input
                 type='text'
                 placeholder='Your Name'
@@ -30,14 +34,14 @@ export const Contact = () => {
 
               <button
                 type='submit'
-                className='border bg-black text-white rounded-md py-3 w-1/2'
+                className='border bg-black text-white rounded-lg py-3 w-full lg:w-1/2'
               >
                 Send Message
               </button>
             </form>
 
             {/* Card */}
-            <div className='grid grid-cols-2 gap-4  w-1/2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='bg-slate-100 rounded-lg shadow-md'>
                 <div className='py-6 px-12 flex flex-col items-center gap-4'>
                   <SocialIcon url='https://web.whatsapp.com/' />

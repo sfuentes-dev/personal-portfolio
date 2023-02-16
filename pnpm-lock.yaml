@@ -14,8 +14,8 @@ specifiers:
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  react-multi-carousel: ^2.8.2
   react-social-icons: ^5.15.0
-  swiper: ^9.0.4
   tailwindcss: ^3.2.6
   typescript: 4.9.5
 
@@ -31,8 +31,8 @@ dependencies:
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-multi-carousel: 2.8.2
   react-social-icons: 5.15.0_react@18.2.0
-  swiper: 9.0.4
   typescript: 4.9.5
 
 devDependencies:
@@ -2049,6 +2049,11 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
+  /react-multi-carousel/2.8.2:
+    resolution: {integrity: sha512-M9Y7DfAp8bA/r6yexttU6RLA7uyppje4c0ELRuCHZWswH+u7nr0uVP6qHNPjc4XGOEY1MYFOb5nBg7JvoKutuQ==}
+    engines: {node: '>=8'}
+    dev: false
+
   /react-social-icons/5.15.0_react@18.2.0:
     resolution: {integrity: sha512-khfDgUiUwEBe34T6br2+mkXQg3hLVDdviVjexxZoVCsogMgxTy/m8+KlX/j6Wa7P2BPxgZ7yZ2jXw3X06pUUFQ==}
     peerDependencies:
@@ -2195,10 +2200,6 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
-  /ssr-window/4.0.2:
-    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
-    dev: false
-
   /stop-iteration-iterator/1.0.0:
     resolution: {integrity: sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==}
     engines: {node: '>= 0.4'}
@@ -2279,13 +2280,6 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-
-  /swiper/9.0.4:
-    resolution: {integrity: sha512-YH4sUh68DYw7vcoBZQ+DeBV6/wLZIRf8dZ4CzkvRTcvDPkIF6oweBdOjKnsXtoPCSUQbtqbZcLRghkfOtd5UYA==}
-    engines: {node: '>= 4.7.0'}
-    dependencies:
-      ssr-window: 4.0.2
-    dev: false
 
   /synckit/0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
