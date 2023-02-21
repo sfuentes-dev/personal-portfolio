@@ -1,20 +1,17 @@
-import { useState } from 'react';
 import Head from 'next/head';
 
-import { Drawer, Navbar } from '@/components/ui';
 import {
   About,
   Contact,
-  Hero,
-  OtherProjects,
-  Projects,
-  Skills,
   Footer,
-} from '@/components/sections';
+  Header,
+  Hero,
+  Projects,
+  Sidebar,
+  Skills,
+} from '@/components';
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <Head>
@@ -24,28 +21,44 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className='sticky top-0 bg-white z-50'>
-        <Navbar setIsOpen={setIsOpen} />
-      </header>
+      <Header />
 
-      <main className='scroll scroll-smooth'>
-        {/* // TODO: Improve and fix  Drawer code */}
-        {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+      <div className='flex gap-0'>
+        <Sidebar />
 
-        <Hero />
+        <main className='scroll scroll-smooth dark:bg-black flex-1'>
+          <section id='hero' className='fadeIn'>
+            <Hero />
+          </section>
 
-        <About />
+          <section id='about'>
+            <About />
+          </section>
 
-        <Skills />
+          <section id='skills'>
+            <Skills />
+          </section>
 
-        <Projects />
+          <section id='projects'>
+            <Projects />
+          </section>
 
-        <OtherProjects />
+          <section id='contact'>
+            <Contact />
+          </section>
+        </main>
+      </div>
 
-        <Contact />
-
+      <div>
         <Footer />
-      </main>
+      </div>
     </>
   );
+}
+
+{
+  /* // TODO: Improve and fix  Drawer code */
+}
+{
+  /* <Drawer isOpen={isOpen} setIsOpen={setIsOpen} /> */
 }
