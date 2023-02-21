@@ -196,7 +196,7 @@ export const data = {
         },
       ],
 
-      imagePath: '/assets/projects/journal.png',
+      imagePath: '/assets/projects/Journal.png',
 
       githubPath: 'https://github.com/sfuentes-dev/journal-app',
       demoPath: 'https://journall-lake.vercel.app/',
