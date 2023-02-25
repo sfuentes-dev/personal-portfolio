@@ -29,8 +29,17 @@ export const Hero = () => {
 
           <div className='bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28] p-0.5 rounded-md '>
             <button className='flex rounded-md py-2 px-4 md:py-2.5  md:px-6 font-semibold gap-1 text-black dark:text-white text-lg bg-white dark:bg-black hover:bg-gradient-to-r hover:from-[#FF4D4D] hover:to-[#F9CB28] hover:text-white dark:hover:text-black transition-colors duration-300 ease-in-out'>
-              Resume
-              <AiOutlineDownload className='w-6 h-6' />
+              <Link
+                href='/resume.pdf'
+                passHref
+                download
+                className='flex justify-center items-center gap-1'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Resume
+                <AiOutlineDownload className='w-6 h-6' />
+              </Link>
             </button>
           </div>
         </div>

@@ -10,7 +10,6 @@ export const About = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className='container mx-auto flex flex-col justify-center md:mb-24  xl:mb-0 text-[#888] xl:h-[calc(100vh_-_64px)]'
-      id='about'
     >
       <div className='flex items-center justify-center flex-col mb-16 gap-5'>
         <span className='w-10 h-10 text-center text-black font-bold rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28] text-lg inline-flex items-center justify-center'>
@@ -37,22 +36,21 @@ export const About = () => {
 
         <div className='mx-4 lg:ml-10 xl:w-1/2'>
           <p className='text-base md:text-lg text-center xl:text-left mx-6 lg:text-xl mt-5'>
-            Hello there, my name is Sebastian and I&apos;m passionate about creating web
-            applications. I&apos;m a Mechanical engineer but in 2021 I decide to pursue my
-            dream of being a Frontend developer (maybe someday a Full Stack dev), so since
-            then I&apos;ve been self-taught in everything relate to web technologies.
-            Currently, I&apos;m learning Next JS and Node JS, while I&apos;m looking for
-            that great first job as a developer.
+            Hi, my name is Sebastian and I&apos;m passionate about building web
+            applications. I&apos;m a mechanical engineer with 2 years of experience in
+            this field, but in 2021 I decided to pursue my dream of being a frontend
+            developer so since then I&apos;ve been self-taught in everything related to
+            web technologies.
           </p>
 
           <p className='text-base md:text-lg text-center  xl:text-left mx-6 lg:text-xl mt-5'>
-            Mi main goal when writing code is to build beautiful applications, with
-            intuitive interfaces taking into account the basics principles of UX/UI
+            My main goal when writing code is to build beautiful applications with
+            intuitive interfaces, taking into account the basic principles of UX/UI
             design, providing accessible and inclusive digital experiences for every user.
           </p>
 
           <p className='text-base md:text-lg text-center  xl:text-left mx-6 lg:text-xl mt-5'>
-            Here are a few technologies I&apos;ve been working with recently:
+            Here are some of the technologies I&apos;ve been working with recently:
           </p>
 
           <div className='mt-6'>
